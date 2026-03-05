@@ -20,7 +20,7 @@ const Feed = () => {
 
   return (
     <main>
-      <Navbar/>
+      {/* <Navbar/> */}
       <div className="feed">
         <div className="post">
           {feed.map((post) => (

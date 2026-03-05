@@ -27,7 +27,7 @@ const Register = () => {
   };
 
   return (
-    <main>
+    <main className={style.main}>
       <div className={style.container}>
         <h1 className={style.title}>Create Account</h1>
 

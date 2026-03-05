@@ -19,7 +19,7 @@ const Login = () => {
   };
 
   return (
-    <main>
+    <main className={style.main}>
       <div className={style.container}>
         <h1 className={style.title}>Login</h1>
 
