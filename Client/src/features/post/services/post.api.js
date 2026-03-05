@@ -18,4 +18,8 @@ const getFeed = async () => {
   }
 };
 
-export { getFeed };
+const handleCreatePost = (data) => {
+  console.log(data);
+};
+
+export { getFeed, handleCreatePost };

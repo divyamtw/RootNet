@@ -27,4 +27,12 @@ const registerSchema = z.object({
     .min(6, { message: "Password should be at least 6 characters long." }),
 });
 
-export { loginSchema, registerSchema };
+const createPostSchema = z.object({
+  caption: z
+    .string()
+    .min(1, { message: "Caption is required." })
+    .max(2200, { message: "Caption cannot exceed 2200 characters." }),
+  img: z.any().refine((files) => files?.length === 1, "Image is required"),
+});
+
+export { loginSchema, registerSchema, createPostSchema };
