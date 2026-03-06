@@ -8,11 +8,12 @@ const Navbar = () => {
     <div className={style.container}>
       <h1 className={style.logo}>RootNet</h1>
       <button
+        className={style.button}
         onClick={() => {
           navigate("/create-post");
         }}
       >
-        create post
+        Create Post
       </button>
     </div>
   );
