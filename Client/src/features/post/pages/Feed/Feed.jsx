@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { usePost } from "../../hooks/usePost";
-import Navbar from "../../../../shared/components/Navbar";
+import Navbar from "../../../../shared/components/Navbar/Navbar";
 
 const Feed = () => {
   const { feed, loading, handleGetFeed } = usePost();
@@ -20,7 +20,7 @@ const Feed = () => {
 
   return (
     <main>
-      {/* <Navbar/> */}
+      <Navbar />
       <div className="feed">
         <div className="post">
           {feed.map((post) => (
